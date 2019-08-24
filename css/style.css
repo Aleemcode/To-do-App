@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%
+}
+body {
+  position: relative;
+  background-color: #333;
+  background-image: url("../image/todo-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 2rem;
+  margin-top : 70px;
+  color: #E5E5E5;
+}
+
+.container {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.header {
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header__task-input {
+    position: relative;
+}
+
+.header__task-input--btn {
+    color: #930808;
+    position: absolute;
+    left: 51.5rem;
+    top: 3rem;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    background: transparent;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+
+input[type=text] {
+    margin-bottom: 2.7rem;
+    padding: 0 2rem;
+    width: 59rem;
+    height: 8.5rem;
+    border: 0;
+    font-size: 1.8rem;
+    background: #E5E5E5;
+  }
+  
+  input[type=text]:focus {
+    outline: none;
+    -webkit-box-shadow: 1rem 1rem 1.2rem -.6rem rgba(0,0,0,0.51);
+    -moz-box-shadow: 1rem 1rem 1.2rem -.6rem rgba(0,0,0,0.51);
+    box-shadow: 1rem 1rem 1.2rem -.6rem rgba(0,0,0,0.51);
+  }
+
+  input::placeholder {
+      font-size: 1.8rem;
+  }
+
+.task-container {
+    width: 59rem;
+    background: #E5E5E5;
+    color: #333;
+    padding: 2.9rem 2.5rem;
+    position: relative;
+    margin-bottom: 4rem;
+
+    -webkit-box-shadow: 1rem 1rem 1.2rem -.6rem rgba(0,0,0,0.51);
+    -moz-box-shadow: 1rem 1rem 1.2rem -.6rem rgba(0,0,0,0.51);
+    box-shadow: 1rem 1rem 1.2rem -.6rem rgba(0,0,0,0.51);
+}
+.task-list__item {
+    list-style: none;
+    background: transparent;
+    border-bottom: .3rem solid #C4C4C4;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.fas {
+    margin-right: 1.38rem;
+    cursor: pointer;
+}
+
+.active {
+    color: #47B974;
+}
+.delete {
+    color: #930808;
+}
+
+.clear {
+    background: transparent;
+    font-size: 2rem;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    opacity: 0.4;
+    text-align: right;
+    position: absolute;
+    left: 44rem;
+    bottom: 1rem;
+}
+
+
+/* MEDIA QUERY */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 4) {
+
+}
