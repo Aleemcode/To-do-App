@@ -30,14 +30,14 @@ function listInterface() {
         taskList.append(listItem);
         taskList.className = "task-list"
     }
-    document.querySelector('.list-field').value = "";    
-}
 
-var clear = document.querySelector('.clear');
-  
-    clear.addEventListener('click', function (e) {
-        var listItem = document.createElement('li');
-        var taskList = document.querySelector('.task-list');
-        
+    checkedIcon.addEventListener('click', function() {
+        // checkedIcon.style = "color: #47B974";
+        checkedIcon.classList.toggle("active");
+        listItem.style = "text-decoration: line-through";
     })
+    document.querySelector('.list-field').value = "";
+
+
+}
 
