@@ -133,6 +133,8 @@ input[type=text] {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
     html {
+        box-sizing: border-box;
         font-size: 36.5%;
     }
+    
 }
